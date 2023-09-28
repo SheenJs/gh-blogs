@@ -44,10 +44,15 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  --theme: pink;
+}
+
+:root {
   --vp-local-search-result-selected-bg: pink;
   --vp-local-search-result-selected-border: pink;
   --vp-c-brand-1: pink;
   --vp-c-indigo-1: pink;
+  --demoblock-border: #f2f2f2;
 }
 
 :root {
@@ -82,14 +87,14 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-button-brand-border: transparent;
+  --vp-button-brand-border: var(--theme);
   --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: #3ea327;
-  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-bg: var(--theme);
+  --vp-button-brand-hover-border: var(--theme);
   --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: #226c13;
-  --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: #10b981;
+  --vp-button-brand-hover-bg: var(--theme);
+  --vp-button-brand-active-border: var(--theme);
+  --vp-button-brand-active-text: var(--theme);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
 }
 
@@ -99,7 +104,7 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #76b516 10%, #279c2e);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--theme) 10%, var(--theme));
 
   --vp-home-hero-image-filter: blur(40px);
 }

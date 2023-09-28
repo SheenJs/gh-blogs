@@ -6,9 +6,10 @@ import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
 export default defineConfig({
   base: '/gh-blogs',
   outDir: './../docs',
-  title: 'GH BLOGS',
-  description: 'A blog site of Wu Guanghui',
+  title: 'title',
+  description: 'description',
   markdown: {
+    // 代码块插件
     config: (md) => {
       md.use(demoblockPlugin);
     },
