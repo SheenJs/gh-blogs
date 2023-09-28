@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev develop",
+    "build": "vitepress build develop",
+    "preview": "vitepress preview develop"
   },
   "devDependencies": {
     "@types/mockjs": "^1.0.8",
