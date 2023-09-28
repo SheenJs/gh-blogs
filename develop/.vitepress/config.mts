@@ -4,7 +4,7 @@ import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/gh-blogs/',
+  base: '/gh-blogs',
   outDir: './../docs',
   title: 'GH BLOGS',
   description: 'A blog site of Wu Guanghui',
