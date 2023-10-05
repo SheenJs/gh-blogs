@@ -16,7 +16,7 @@
       const commentConfig = {
         clientID: 'acd2fa09352e6a2f5321',
         clientSecret: '80367cab283ee5e7eb29ced87ad1f6a8b933588d',
-        repo: 'https://github.com/SheenJs/gh-blogs',
+        repo: 'gh-blogs',
         owner: 'SheenJs',
         admin: ['SheenJs'],
         id: md5(location.pathname),
