@@ -1,4 +1,4 @@
-import{_ as E,u as y,o as t,c as p,t as i,l as d,C as m,H as a,w as n,k as s,a as l}from"./chunks/framework.a16c8809.js";const _={__name:"api.md.demo.e5eedae8",setup(c){const{theme:e}=y();return(r,o)=>(t(),p("pre",null,i(d(e)),1))}},u=E(_,[["__scopeId","data-v-cbed86e3"]]);const h={__name:"api.md.demo.e5eedae6",setup(c){const{page:e}=y();return(r,o)=>(t(),p("pre",null,i(d(e)),1))}},F=E(h,[["__scopeId","data-v-2ca66ded"]]);const D={__name:"api.md.demo.e5eedae4",setup(c){const{frontmatter:e}=y();return(r,o)=>(t(),p("pre",null,i(d(e)),1))}},g=E(D,[["__scopeId","data-v-9431483e"]]),v=s("h1",{id:"runtime-api",tabindex:"-1"},[l("Runtime API "),s("a",{class:"header-anchor",href:"#runtime-api","aria-label":'Permalink to "Runtime API"'},"​")],-1),f=s("h2",{id:"theme",tabindex:"-1"},[l("theme "),s("a",{class:"header-anchor",href:"#theme","aria-label":'Permalink to "theme"'},"​")],-1),A=s("div",{class:"language-vue vp-adaptive-theme"},[s("span",{class:"lang"},"vue"),s("pre",{"v-pre":"",class:"shiki github-dark vp-code-dark"},[s("code",null,[s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
+import{_ as E,u as y,o as t,c as p,t as i,l as d,C as m,H as e,w as n,k as s,a as l}from"./chunks/framework.a16c8809.js";const u={__name:"api.md.demo.e5eedae8",setup(c){const{theme:o}=y();return(r,a)=>(t(),p("pre",null,i(d(o)),1))}},h=E(u,[["__scopeId","data-v-cbed86e3"]]);const F={__name:"api.md.demo.e5eedae6",setup(c){const{page:o}=y();return(r,a)=>(t(),p("pre",null,i(d(o)),1))}},D=E(F,[["__scopeId","data-v-2ca66ded"]]);const g={__name:"api.md.demo.e5eedae4",setup(c){const{frontmatter:o}=y();return(r,a)=>(t(),p("pre",null,i(d(o)),1))}},v=E(g,[["__scopeId","data-v-9431483e"]]),f=s("h1",{id:"runtime-api",tabindex:"-1"},[l("Runtime API "),s("a",{class:"header-anchor",href:"#runtime-api","aria-label":'Permalink to "Runtime API"'},"​")],-1),A=s("h2",{id:"theme",tabindex:"-1"},[l("theme "),s("a",{class:"header-anchor",href:"#theme","aria-label":'Permalink to "theme"'},"​")],-1),C=s("div",{class:"language-vue vp-adaptive-theme"},[s("span",{class:"lang"},"vue"),s("pre",{"v-pre":"",class:"shiki github-dark vp-code-dark"},[s("code",null,[s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"  <"),s("span",{style:{color:"#85E89D"}},"pre"),s("span",{style:{color:"#E1E4E8"}},">{{theme}}</"),s("span",{style:{color:"#85E89D"}},"pre"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"</"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"script"),s("span",{style:{color:"#E1E4E8"}}," "),s("span",{style:{color:"#B392F0"}},"setup"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
@@ -20,7 +20,7 @@ import{_ as E,u as y,o as t,c as p,t as i,l as d,C as m,H as a,w as n,k as s,a a
 `),s("span",{class:"line"},[s("span",{style:{color:"#22863A"}},"pre"),s("span",{style:{color:"#24292E"}},"{")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"  "),s("span",{style:{color:"#005CC5"}},"font-size"),s("span",{style:{color:"#24292E"}},": "),s("span",{style:{color:"#005CC5"}},"12"),s("span",{style:{color:"#D73A49"}},"px"),s("span",{style:{color:"#24292E"}},";")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"}")]),l(`
-`),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"</"),s("span",{style:{color:"#22863A"}},"style"),s("span",{style:{color:"#24292E"}},">")])])])],-1),C=s("h2",{id:"page",tabindex:"-1"},[l("page "),s("a",{class:"header-anchor",href:"#page","aria-label":'Permalink to "page"'},"​")],-1),B=s("div",{class:"language-vue vp-adaptive-theme"},[s("span",{class:"lang"},"vue"),s("pre",{"v-pre":"",class:"shiki github-dark vp-code-dark"},[s("code",null,[s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
+`),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"</"),s("span",{style:{color:"#22863A"}},"style"),s("span",{style:{color:"#24292E"}},">")])])])],-1),B=s("h2",{id:"page",tabindex:"-1"},[l("page "),s("a",{class:"header-anchor",href:"#page","aria-label":'Permalink to "page"'},"​")],-1),x=s("div",{class:"language-vue vp-adaptive-theme"},[s("span",{class:"lang"},"vue"),s("pre",{"v-pre":"",class:"shiki github-dark vp-code-dark"},[s("code",null,[s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"  <"),s("span",{style:{color:"#85E89D"}},"pre"),s("span",{style:{color:"#E1E4E8"}},">{{page}}</"),s("span",{style:{color:"#85E89D"}},"pre"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"</"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"script"),s("span",{style:{color:"#E1E4E8"}}," "),s("span",{style:{color:"#B392F0"}},"setup"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
@@ -42,7 +42,7 @@ import{_ as E,u as y,o as t,c as p,t as i,l as d,C as m,H as a,w as n,k as s,a a
 `),s("span",{class:"line"},[s("span",{style:{color:"#22863A"}},"pre"),s("span",{style:{color:"#24292E"}},"{")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"  "),s("span",{style:{color:"#005CC5"}},"font-size"),s("span",{style:{color:"#24292E"}},": "),s("span",{style:{color:"#005CC5"}},"12"),s("span",{style:{color:"#D73A49"}},"px"),s("span",{style:{color:"#24292E"}},";")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"}")]),l(`
-`),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"</"),s("span",{style:{color:"#22863A"}},"style"),s("span",{style:{color:"#24292E"}},">")])])])],-1),x=s("h2",{id:"theme-1",tabindex:"-1"},[l("theme "),s("a",{class:"header-anchor",href:"#theme-1","aria-label":'Permalink to "theme"'},"​")],-1),k=s("div",{class:"language-vue vp-adaptive-theme"},[s("span",{class:"lang"},"vue"),s("pre",{"v-pre":"",class:"shiki github-dark vp-code-dark"},[s("code",null,[s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
+`),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"</"),s("span",{style:{color:"#22863A"}},"style"),s("span",{style:{color:"#24292E"}},">")])])])],-1),k=s("h2",{id:"theme-1",tabindex:"-1"},[l("theme "),s("a",{class:"header-anchor",href:"#theme-1","aria-label":'Permalink to "theme"'},"​")],-1),b=s("div",{class:"language-vue vp-adaptive-theme"},[s("span",{class:"lang"},"vue"),s("pre",{"v-pre":"",class:"shiki github-dark vp-code-dark"},[s("code",null,[s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"  <"),s("span",{style:{color:"#85E89D"}},"pre"),s("span",{style:{color:"#E1E4E8"}},">{{frontmatter}}</"),s("span",{style:{color:"#85E89D"}},"pre"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"</"),s("span",{style:{color:"#85E89D"}},"template"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#E1E4E8"}},"<"),s("span",{style:{color:"#85E89D"}},"script"),s("span",{style:{color:"#E1E4E8"}}," "),s("span",{style:{color:"#B392F0"}},"setup"),s("span",{style:{color:"#E1E4E8"}},">")]),l(`
@@ -64,7 +64,7 @@ import{_ as E,u as y,o as t,c as p,t as i,l as d,C as m,H as a,w as n,k as s,a a
 `),s("span",{class:"line"},[s("span",{style:{color:"#22863A"}},"pre"),s("span",{style:{color:"#24292E"}},"{")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"  "),s("span",{style:{color:"#005CC5"}},"font-size"),s("span",{style:{color:"#24292E"}},": "),s("span",{style:{color:"#005CC5"}},"12"),s("span",{style:{color:"#D73A49"}},"px"),s("span",{style:{color:"#24292E"}},";")]),l(`
 `),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"}")]),l(`
-`),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"</"),s("span",{style:{color:"#22863A"}},"style"),s("span",{style:{color:"#24292E"}},">")])])])],-1),b=s("p",null,[s("a",{href:"https://vitepress.dev/reference/runtime-api#usedata",target:"_blank",rel:"noreferrer"},"more")],-1),P=JSON.parse('{"title":"Runtime API","description":"","frontmatter":{},"headers":[],"relativePath":"vitepress/api.md","filePath":"vitepress/api.md"}'),z={name:"vitepress/api.md"},R=Object.assign(z,{setup(c){return(e,r)=>{const o=m("demo");return t(),p("div",null,[v,f,a(o,{customClass:"",sourceCode:`<template>
+`),s("span",{class:"line"},[s("span",{style:{color:"#24292E"}},"</"),s("span",{style:{color:"#22863A"}},"style"),s("span",{style:{color:"#24292E"}},">")])])])],-1),z=s("p",null,[s("a",{href:"https://vitepress.dev/reference/runtime-api#usedata",target:"_blank",rel:"noreferrer"},"more")],-1),R=JSON.parse('{"title":"Runtime API","description":"","frontmatter":{},"headers":[],"relativePath":"vitepress/api.md","filePath":"vitepress/api.md"}'),I={name:"vitepress/api.md"},N=Object.assign(I,{setup(c){return(o,r)=>{const a=m("demo"),_=m("git-talk");return t(),p("div",null,[f,A,e(a,{customClass:"",sourceCode:`<template>
   <pre>{{theme}}</pre>
 </template>
 <script setup>
@@ -76,7 +76,7 @@ pre{
   font-size: 12px;
 }
 </style>
-`},{highlight:n(()=>[A]),default:n(()=>[a(u)]),_:1}),C,a(o,{customClass:"",sourceCode:`<template>
+`},{highlight:n(()=>[C]),default:n(()=>[e(h)]),_:1}),B,e(a,{customClass:"",sourceCode:`<template>
   <pre>{{page}}</pre>
 </template>
 <script setup>
@@ -88,7 +88,7 @@ pre{
   font-size: 12px;
 }
 </style>
-`},{highlight:n(()=>[B]),default:n(()=>[a(F)]),_:1}),x,a(o,{customClass:"",sourceCode:`<template>
+`},{highlight:n(()=>[x]),default:n(()=>[e(D)]),_:1}),k,e(a,{customClass:"",sourceCode:`<template>
   <pre>{{frontmatter}}</pre>
 </template>
 <script setup>
@@ -100,4 +100,4 @@ pre{
   font-size: 12px;
 }
 </style>
-`},{highlight:n(()=>[k]),default:n(()=>[a(g)]),_:1}),b])}}});export{P as __pageData,R as default};
+`},{highlight:n(()=>[b]),default:n(()=>[e(v)]),_:1}),z,e(_)])}}});export{R as __pageData,N as default};
