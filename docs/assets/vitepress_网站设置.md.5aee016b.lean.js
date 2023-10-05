@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s}from"./chunks/framework.a16c8809.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"vitepress/网站设置.md","filePath":"vitepress/网站设置.md"}'),r={name:"vitepress/网站设置.md"};function a(o,c,n,_,p,i){return s(),t("div")}const f=e(r,[["render",a]]);export{m as __pageData,f as default};

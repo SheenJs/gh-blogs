@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.a16c8809.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"echarts/起步.md","filePath":"echarts/起步.md"}'),r={name:"echarts/起步.md"};function s(c,o,n,_,p,d){return a(),t("div")}const f=e(r,[["render",s]]);export{m as __pageData,f as default};

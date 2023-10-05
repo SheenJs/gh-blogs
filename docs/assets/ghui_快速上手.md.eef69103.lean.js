@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,Q as l}from"./chunks/framework.9e405736.js";const d=JSON.parse('{"title":"快速上手","description":"","frontmatter":{},"headers":[],"relativePath":"ghui/快速上手.md","filePath":"ghui/快速上手.md"}'),p={name:"ghui/快速上手.md"},o=l("",10),e=[o];function t(c,r,E,y,i,h){return n(),a("div",null,e)}const g=s(p,[["render",t]]);export{d as __pageData,g as default};

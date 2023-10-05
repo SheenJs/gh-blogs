@@ -6,19 +6,19 @@ export default [
     items: [
       {
         text: '基础',
-        link: '/js/JS基础',
+        link: '/blogs/js/JS基础',
       },
       {
         text: '高级',
-        link: '/js/JS高级',
+        link: '/blogs/js/JS高级',
       },
       {
         text: 'ES6',
-        link: '/js/es6',
+        link: '/blogs/js/es6',
       },
       {
         text: 'typescript',
-        link: '/js/TS',
+        link: '/blogs/js/TS',
       },
     ],
   },
@@ -27,11 +27,11 @@ export default [
     items: [
       {
         text: 'Array',
-        link: '/js/Array',
+        link: '/blogs/js/Array',
       },
       {
         text: 'Date',
-        link: '/js/Date',
+        link: '/blogs/js/Date',
       },
     ],
   },
