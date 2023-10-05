@@ -1,6 +1,5 @@
 import type { DefaultTheme } from 'vitepress';
 
-// https://vitepress.dev/reference/default-theme-config
 export default [
-  { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+  { icon: 'github', link: 'https://github.com/SheenJs/gh-blogs' },
 ] as DefaultTheme.SocialLink[];

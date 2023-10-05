@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # .vitepress
 /develop/.vitepress/cache
+/back
 
 *-lock.yaml
 *.rar
@@ -27,3 +28,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/back/

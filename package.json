@@ -14,9 +14,14 @@
     "vitepress-theme-demoblock": "^3.0.3"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.0",
     "ant-design-vue": "4.x",
+    "echarts": "^5.4.3",
+    "gitalk": "^1.8.0",
+    "md5": "^2.3.0",
     "prettier": "^2.8.4",
     "vite": "^4.4.9",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-ghui": "^1.0.4"
   }
 }
