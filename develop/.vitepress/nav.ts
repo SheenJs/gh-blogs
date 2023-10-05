@@ -5,11 +5,11 @@ export default [
   { text: 'GHUI', link: '/ghui/搭建组件库流程', activeMatch: '/ghui/' },
   {
     text: 'blogs',
-    activeMatch: '/css/' || '/vitepress/',
+    activeMatch: '/css/',
     items: [
       { text: 'html', link: '/a' },
       { text: 'css', link: '/css/常用片段', activeMatch: '/css/' },
-      { text: 'JavaScript', link: '/a' },
+      { text: 'JavaScript', link: '/js/JS基础', activeMatch: '/js/' },
       { text: 'vue', link: '/a' },
       { text: 'vite', link: '/a' },
       { text: 'mini program', link: '/a' },
@@ -18,7 +18,7 @@ export default [
       { text: 'flutter', link: '/a' },
       { text: 'react', link: '/a' },
       { text: 'compiler', link: '/a' },
-      { text: 'vitepress', link: '/vitepress/起步', activeMatch: 'vitepress' },
+      { text: 'vitepress', link: '/vitepress/起步', activeMatch: '/vitepress/' },
       { text: 'back-end', link: '/b' },
     ],
   },
