@@ -14,129 +14,129 @@
 </template>
 
 <style lang="less" scoped>
-.loading {
-  width: 30px;
-  height: 30px;
-  position: relative;
-}
-
-.shape {
-  width: 13px;
-  height: 13px;
-  position: absolute;
-  border-radius: 2px;
-}
-
-.shape-1 {
-  background-color: #1875e5;
-  left: 0;
-  animation: animationShape1 2s linear infinite;
-}
-
-.shape-2 {
-  background-color: #c5523f;
-  right: 0;
-  animation: animationShape2 2s linear infinite;
-}
-
-.shape-3 {
-  background-color: #499255;
-  bottom: 0;
-  animation: animationShape3 2s linear infinite;
-}
-
-.shape-4 {
-  background-color: #f2b736;
-  right: 0;
-  bottom: 0;
-  animation: animationShape4 2s linear infinite;
-}
-
-@keyframes animationShape1 {
-  0% {
-    transform: translate(0);
+  .loading {
+    width: 30px;
+    height: 30px;
+    position: relative;
   }
 
-  25% {
-    transform: translateX(17px);
+  .shape {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    border-radius: 2px;
   }
 
-  50% {
-    transform: translate(17px, 17px);
+  .shape-1 {
+    background-color: #1875e5;
+    left: 0;
+    animation: animationShape1 2s linear infinite;
   }
 
-  75% {
-    transform: translate(0, 17px);
+  .shape-2 {
+    background-color: #c5523f;
+    right: 0;
+    animation: animationShape2 2s linear infinite;
   }
 
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes animationShape2 {
-  0% {
-    transform: translate(0);
+  .shape-3 {
+    background-color: #499255;
+    bottom: 0;
+    animation: animationShape3 2s linear infinite;
   }
 
-  25% {
-    transform: translateY(17px);
+  .shape-4 {
+    background-color: #f2b736;
+    right: 0;
+    bottom: 0;
+    animation: animationShape4 2s linear infinite;
   }
 
-  50% {
-    transform: translate(-17px, 17px);
+  @keyframes animationShape1 {
+    0% {
+      -webkit-transform: translate(0);
+    }
+
+    25% {
+      -webkit-transform: translateX(17px);
+    }
+
+    50% {
+      -webkit-transform: translate(17px, 17px);
+    }
+
+    75% {
+      -webkit-transform: translate(0, 17px);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+    }
   }
 
-  75% {
-    transform: translate(-17px, 0);
+  @keyframes animationShape2 {
+    0% {
+      -webkit-transform: translate(0);
+    }
+
+    25% {
+      -webkit-transform: translateY(17px);
+    }
+
+    50% {
+      -webkit-transform: translate(-17px, 17px);
+    }
+
+    75% {
+      -webkit-transform: translate(-17px, 0);
+    }
+
+    100% {
+      -webkit-transform: translate(0);
+    }
   }
 
-  100% {
-    transform: translate(0);
-  }
-}
+  @keyframes animationShape3 {
+    0% {
+      -webkit-transform: translate(0);
+    }
 
-@keyframes animationShape3 {
-  0% {
-    transform: translate(0);
-  }
+    25% {
+      -webkit-transform: translateY(-17px);
+    }
 
-  25% {
-    transform: translateY(-17px);
-  }
+    50% {
+      -webkit-transform: translate(17px, -17px);
+    }
 
-  50% {
-    transform: translate(17px, -17px);
-  }
+    75% {
+      -webkit-transform: translate(17px, 0);
+    }
 
-  75% {
-    transform: translate(17px, 0);
-  }
-
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes animationShape4 {
-  0% {
-    transform: translate(0);
+    100% {
+      -webkit-transform: translate(0);
+    }
   }
 
-  25% {
-    transform: translateX(-17px);
-  }
+  @keyframes animationShape4 {
+    0% {
+      -webkit-transform: translate(0);
+    }
 
-  50% {
-    transform: translate(-17px, -17px);
-  }
+    25% {
+      -webkit-transform: translateX(-17px);
+    }
 
-  75% {
-    transform: translate(0, -17px);
-  }
+    50% {
+      -webkit-transform: translate(-17px, -17px);
+    }
 
-  100% {
-    transform: translate(0);
+    75% {
+      -webkit-transform: translate(0, -17px);
+    }
+
+    100% {
+      -webkit-transform: translate(0);
+    }
   }
-}
 </style>

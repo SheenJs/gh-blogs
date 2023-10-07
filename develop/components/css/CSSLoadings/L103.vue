@@ -9,43 +9,43 @@
 </template>
 
 <style lang="less" scoped>
-.loading {
-  width: 4.8px;
-  height: 4.8px;
-  display: inline-block;
-  position: relative;
-  border-radius: 4px;
-  color: #ddd;
-  background: currentColor;
-  animation: loading-animation 0.3s 0.3s linear infinite alternate;
-}
-
-.loading::after,
-.loading::before {
-  content: "";
-  width: 4.8px;
-  height: 4.8px;
-  border-radius: 4px;
-  background: currentColor;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 15px;
-  animation: loading-animation 0.3s 0.45s linear infinite alternate;
-}
-
-.loading::after {
-  top: -15px;
-  animation-delay: 0s;
-}
-
-@keyframes loading-animation {
-  0% {
+  .loading {
     width: 4.8px;
+    height: 4.8px;
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    color: #ddd;
+    background: currentColor;
+    animation: loading-animation 0.3s 0.3s linear infinite alternate;
   }
 
-  100% {
-    width: 48px;
+  .loading::after,
+  .loading::before {
+    content: '';
+    width: 4.8px;
+    height: 4.8px;
+    border-radius: 4px;
+    background: currentColor;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    top: 15px;
+    animation: loading-animation 0.3s 0.45s linear infinite alternate;
   }
-}
+
+  .loading::after {
+    top: -15px;
+    animation-delay: 0s;
+  }
+
+  @keyframes loading-animation {
+    0% {
+      width: 4.8px;
+    }
+
+    100% {
+      width: 48px;
+    }
+  }
 </style>

@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,Q as l}from"./chunks/framework.f805e0a2.js";const h=JSON.parse('{"title":"正则","description":"","frontmatter":{},"headers":[],"relativePath":"blogs/js/正则.md","filePath":"blogs/js/正则.md"}'),p={name:"blogs/js/正则.md"},o=l("",33),e=[o];function r(t,c,y,E,i,F){return n(),a("div",null,e)}const u=s(p,[["render",r]]);export{h as __pageData,u as default};

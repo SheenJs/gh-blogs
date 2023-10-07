@@ -91,12 +91,9 @@
 :root {
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: #3ea327;
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: #226c13;
   --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: #10b981;
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
 }
 

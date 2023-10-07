@@ -14,6 +14,7 @@ export default {
   nav, //头部导航
   sidebar, //侧边栏
   socialLinks, //项目仓库地址
+  outline: 'deep',
   outlineTitle: '章节导航', // 文章导航提示
   docFooter: {
     prev: '←上一篇',
@@ -24,6 +25,9 @@ export default {
   editLink: {
     text: '在github编辑该页面',
     pattern: 'https://github.com/SheenJs/gh-blogs/tree/main/develop/:path',
+  },
+  markdown: {
+    lineNumbers: true,
   },
   // 底部配置
   footer: {

@@ -15,6 +15,7 @@
     height: 667px;
     position: fixed;
     right: 124px;
+    z-index: 1;
     top: calc(50% - 400px);
     border: #eee solid 1px;
     &::-webkit-scrollbar {

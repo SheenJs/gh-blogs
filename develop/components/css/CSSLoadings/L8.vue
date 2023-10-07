@@ -9,51 +9,51 @@
 </template>
 
 <style lang="less" scoped>
-.loading {
-  margin: 20px;
-  position: relative;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #000;
+  .loading {
+    margin: 20px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #000;
 
-  animation: ball-rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
-  animation-fill-mode: both;
-}
-
-.loading:before,
-.loading:after {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  margin: 2px;
-  content: "";
-  opacity: 0.8;
-  border-radius: 100%;
-  background-color: #000;
-}
-
-.loading:before {
-  top: 0;
-  left: -28px;
-}
-
-.loading:after {
-  top: 0;
-  left: 25px;
-}
-
-@keyframes ball-rotate {
-  0% {
-    transform: rotate(0deg) scale(1);
+    animation: ball-rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
+    animation-fill-mode: both;
   }
 
-  50% {
-    transform: rotate(180deg) scale(0.6);
+  .loading:before,
+  .loading:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+    content: '';
+    opacity: 0.8;
+    border-radius: 100%;
+    background-color: #000;
   }
 
-  100% {
-    transform: rotate(360deg) scale(1);
+  .loading:before {
+    top: 0;
+    left: -28px;
   }
-}
+
+  .loading:after {
+    top: 0;
+    left: 25px;
+  }
+
+  @keyframes ball-rotate {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+      -webkit-transform: rotate(180deg) scale(0.6);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+    }
+  }
 </style>

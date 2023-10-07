@@ -54,33 +54,14 @@
 
 <template>
   <div class="search_box">
-    <img
-      @click="wayShow = !wayShow"
-      title="跟换搜索引擎"
-      :src="SEARCH_ICON_LIST[status].icon"
-    />
-    <input
-      @focus="focus"
-      @input="input"
-      v-model="searchVal"
-      placeholder="输入搜索内容"
-    />
-    <a
-      id="doSearch"
-      class="search_btn"
-      target="_blank"
-      :href="searchHref[status] + searchVal"
-    >
+    <img @click="wayShow = !wayShow" title="跟换搜索引擎" :src="SEARCH_ICON_LIST[status].icon" />
+    <input @focus="focus" @input="input" v-model="searchVal" placeholder="输入搜索内容" />
+    <a id="doSearch" class="search_btn" target="_blank" :href="searchHref[status] + searchVal">
       搜索
     </a>
     <Transition name="tips-fade">
       <div v-show="searchTips.length" class="search_tips">
-        <a
-          target="_blank"
-          v-for="tips in searchTips"
-          :href="searchHref[status] + tips"
-          :key="tips"
-        >
+        <a target="_blank" v-for="tips in searchTips" :href="searchHref[status] + tips" :key="tips">
           {{ tips }}
         </a>
       </div>
@@ -198,7 +179,7 @@
 
   .slide-fade-enter-from,
   .slide-fade-leave-to {
-    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
     opacity: 0;
   }
 
@@ -208,7 +189,7 @@
 
   .tips-fade-enter-from,
   .tips-fade-leave-to {
-    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
     opacity: 0;
   }
 </style>

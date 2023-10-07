@@ -7,8 +7,8 @@ titleTemplate: A blog site of Wu Guanghui
 
 hero:
   name: "GH BLOGS"
-  text: "A blog site of Wu Guanghui"
-  tagline: The power is with you.[别太放肆,没设么用.]
+  text: 🍂🌻🌼🌷🌱🌲🌴
+  tagline: 🍂🌻🌼🌷🌱🌲🌴
   actions:
     - theme: brand
       text: GHUI
@@ -55,7 +55,7 @@ features:
   details: 日常工作、学习踩坑记录
   link: /blogs/frame/system/vue3
 ---
-<git-talk />
+<git-talk style="padding: 0 24px" />
 <HomeSearch />
 
 <script setup lang='ts'>

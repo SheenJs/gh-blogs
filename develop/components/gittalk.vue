@@ -1,5 +1,5 @@
 <template>
-  <div class="gitalk">
+  <div class="gitalk" v-bind="$attrs">
     <div id="gitalk-container"></div>
   </div>
 </template>
@@ -31,7 +31,6 @@
   .gitalk {
     width: 100%;
     max-width: 1200px;
-    padding: 0 30px;
     margin: 0 auto;
   }
   .gt-container .gt-header-textarea {

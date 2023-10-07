@@ -3,6 +3,7 @@ import type { DefaultTheme } from 'vitepress';
 export default [
   {
     text: 'JS基础知识',
+    collapsed: false,
     items: [
       {
         text: '基础',
@@ -24,6 +25,7 @@ export default [
   },
   {
     text: '内置对象',
+    collapsed: false,
     items: [
       {
         text: 'Array',
@@ -33,6 +35,14 @@ export default [
         text: 'Date',
         link: '/blogs/js/Date',
       },
+      {
+        text: 'RegExp',
+        link: '/blogs/js/正则',
+      },
     ],
+  },
+  {
+    text: '面试题',
+    link: '/blogs/js/topic',
   },
 ] as DefaultTheme.Sidebar;

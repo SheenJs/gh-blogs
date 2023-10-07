@@ -9,23 +9,23 @@
 </template>
 
 <style lang="less" scoped>
-.loading {
-  width: 30px;
-  height: 30px;
-  border: 2px solid #000;
-  border-top-color: transparent;
-  border-radius: 100%;
+  .loading {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-top-color: transparent;
+    border-radius: 100%;
 
-  animation: circle infinite 0.75s linear;
-}
+    animation: circle infinite 0.75s linear;
+  }
 
-// 转转转动画
-@keyframes circle {
-  0% {
-    transform: rotate(0);
+  // 转转转动画
+  @keyframes circle {
+    0% {
+      -webkit-transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 </style>
