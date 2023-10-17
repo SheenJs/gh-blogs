@@ -1,10 +1,12 @@
-// @ts-ignore
-import { init, EChartsOption, DatasetOption } from 'echarts';
+import * as echarts from 'echarts';
 import { useResizeObserver, useDebounceFn } from '@vueuse/core';
+// @ts-ignore
+import china from './china.json';
+echarts.registerMap('china', china);
 
-export function useECharts(el: HTMLElement, options: EChartsOption) {
+export function useECharts(el: HTMLElement, options: echarts.EChartsOption) {
   let chart: any;
-  chart = init(el);
+  chart = echarts.init(el);
   chart.setOption(options);
   useResizeObserver(
     el,
@@ -13,7 +15,7 @@ export function useECharts(el: HTMLElement, options: EChartsOption) {
     }, 50)
   );
 
-  const setData = (dataset: DatasetOption | DatasetOption[]) => {
+  const setData = (dataset: echarts.DatasetOption | echarts.DatasetOption[]) => {
     // @ts-ignore
     chart.setOption(Object.assign(options, { dataset }));
   };

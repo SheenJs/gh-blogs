@@ -24,7 +24,7 @@
 
     document.addEventListener('keydown', ({ key }) => {
       keyUpStr.value += key;
-      if (/.*?ss$/g.test(keyUpStr.value)) {
+      if (/.*?search$/g.test(keyUpStr.value)) {
         show.value = true;
       }
       if (/.*?close$/g.test(keyUpStr.value)) {

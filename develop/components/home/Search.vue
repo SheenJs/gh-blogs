@@ -110,7 +110,7 @@
 
     .search_btn {
       width: 80px;
-      background: pink;
+      background: var(--theme);
       font-size: 12px;
       text-align: center;
       color: white;

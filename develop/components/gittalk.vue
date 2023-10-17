@@ -32,8 +32,50 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    .gt-svg {
+      fill: #67676c;
+    }
+    .gt-container .gt-btn {
+      border: none;
+      background: #3e63dd;
+      transition: all 0.25s;
+      &:hover {
+        background: #5c73e7;
+      }
+    }
+    .gt-container .gt-btn-preview {
+      color: white;
+    }
   }
-  .gt-container .gt-header-textarea {
-    color: #000;
+
+  .dark {
+    .gt-svg {
+      fill: #98989f;
+    }
+    .gt-header-textarea {
+      background: #161618;
+      &:hover {
+        background: #2b2b2d;
+      }
+    }
+    .gt-comment-content {
+      background: #161618 !important;
+      &:hover {
+        box-shadow: none !important;
+      }
+    }
+    .gt-comment-body.markdown-body {
+      color: #aaa !important;
+    }
+    .gt-container .gt-meta {
+      border-bottom: 1px solid #333;
+    }
+    .gt-header-preview.markdown-body {
+      color: #aaa;
+      background: #161618;
+      &:hover {
+        background: #2b2b2d;
+      }
+    }
   }
 </style>

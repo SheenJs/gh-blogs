@@ -13,7 +13,7 @@
 </template>
 <script setup lang="ts">
   import { onMounted, ref } from 'vue';
-  import {useECharts} from '/utils/useECharts';
+  import { useECharts } from '/utils/useECharts';
   import { HELLO_WORD } from './data'
 
   let chart;
@@ -228,6 +228,35 @@ onMounted(() => {
 <style lang="less" scoped>
 .chart {
   height: 300px;
+  background: linear-gradient(90deg, #dde4ff, #fff, #fff, #dde4ff);
+}
+</style>
+```
+:::
+
+## 中国地图
+
+:::demo
+```vue
+<template>
+  <div ref="xAxisChartRef" class="chart"></div>
+</template>
+<script setup lang="ts">
+import { onMounted, ref } from 'vue';
+import { useECharts } from '/utils/useECharts';
+import { mapOptions } from './data'
+
+let chart;
+const xAxisChartRef = ref();
+
+onMounted(() => {
+  chart = useECharts(xAxisChartRef.value,mapOptions)
+});
+</script>
+
+<style lang="less" scoped>
+.chart {
+  height: 500px;
   background: linear-gradient(90deg, #dde4ff, #fff, #fff, #dde4ff);
 }
 </style>

@@ -3,7 +3,7 @@ import { h } from 'vue';
 import Theme from 'vitepress/theme';
 // @ts-ignore
 import { useComponents } from './useComponents';
-import './style.css';
+import './style.less';
 import 'ant-design-vue/dist/reset.css';
 
 export default {
