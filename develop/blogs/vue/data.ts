@@ -41,3 +41,18 @@ export const columns: TableColumnsType = [
     },
   },
 ];
+
+const user = {
+  name: 'wgh',
+  age: 18,
+  sex: 1,
+};
+
+function getUserProp<T extends object, K extends keyof T>(obj: T, key: K) {
+  return obj[key];
+}
+
+getUserProp(user, 'name');
+
+let key: any;
+console.log(user[key as keyof { name: string; age: string; sex: number }]);

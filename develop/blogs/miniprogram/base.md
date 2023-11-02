@@ -309,3 +309,63 @@ Component({
 }
 ```
 
+## 微信小程序使用插槽
+
+- 默认插槽
+
+```wxml
+<!--组件index.wxml-->
+<view>
+  <slot></slot>
+</view>
+```
+
+```wxml
+<view class="container">
+  <comA>
+    你好
+  </comA>
+</view>
+```
+
+- 具名插槽
+
+```wxml
+<!--组件index.wxml-->
+<view>
+  <slot name="a"></slot>
+</view>
+```
+
+```wxml
+<!--组件使用-->
+<view class="container">
+  <comA>
+    <view slot="a">
+      <van-button>按钮</van-button>
+    </view>
+  </comA>
+</view>
+```
+
+## ios底部高度变量
+
+```less
+env(safe-area-inset-bottom);
+```
+
+## 状态栏高度获取
+```ts
+page({
+  async onLoad() {
+    this.setData({
+      navH: (await wx.getSystemInfo()).statusBarHeight
+    })
+  }
+})
+```
+
+
+
+
+

@@ -14,8 +14,34 @@ export default [
         link: '/blogs/js/JS高级',
       },
       {
+        text: 'dom',
+      },
+      {
+        text: 'bom',
+      },
+      {
         text: 'ES6',
         link: '/blogs/js/es6',
+        items: [
+          {
+            text: 'ES7',
+          },
+          {
+            text: 'ES8-9',
+          },
+          {
+            text: 'ES10',
+          },
+          {
+            text: 'ES11',
+          },
+          {
+            text: 'ES12',
+          },
+          {
+            text: 'ES13',
+          },
+        ],
       },
       {
         text: 'typescript',
@@ -38,6 +64,37 @@ export default [
       {
         text: 'RegExp',
         link: '/blogs/js/正则',
+      },
+      {
+        text: 'string',
+        link: '/blogs/js/string',
+      },
+      {
+        text: 'Object',
+      },
+      {
+        text: 'Function',
+      },
+      {
+        text: 'Math',
+      },
+      {
+        text: 'Number',
+      },
+      {
+        text: 'und null NaN',
+      },
+      {
+        text: 'set Map',
+      },
+      {
+        text: 'parseInt',
+      },
+      {
+        text: 'Promise',
+      },
+      {
+        text: 'Json',
       },
     ],
   },

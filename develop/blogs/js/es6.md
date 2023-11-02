@@ -1,4 +1,4 @@
-# es6
+# ES6
 
 ## 块级作用域
 
@@ -88,8 +88,9 @@ obj.name = 'Alice'; // Error: 无法分配到 "name" ，因为它是只读属性
 ```
 :::
 
+## 结构解析赋值
 
-## 数组结构解析赋值
+### 数组结构解析赋值
 - 结构解析赋值要保证两侧的数据类型要一样
 ```js
 let [name1,name2,name3] =  ["wc", "xq", "jj"];
@@ -142,7 +143,16 @@ let [...a,b] = ['周星驰','吴孟达','王宝强'];
 ```
 :::
 
-## 展开运算符和reset运算符
+### 使用结构解析赋值交换两个变量
+```ts
+let a = 1;
+let b = 2;
+[a,b] = [b,a];
+console.log(a,b); // 2 1
+```
+
+
+### 展开运算符和reset运算符
 - 展开运算符
 ```ts
 let arr1 = [1, 2, 3];
@@ -162,7 +172,7 @@ function fn(a,...args) {
 }
 fn(1,2,3,4,5,6);
 ```
-## 对象结构解析赋值
+### 对象结构解析赋值
 - 对象解析赋值
 ```ts
 let { userName, b } = {userName: 'wgh', age:18 };
@@ -192,7 +202,7 @@ console.log(name);
 console.log(age);  // undefined
 ```
 
-## 字符串解析赋值
+### 字符串解析赋值
 ```ts
 // 字符串的解构赋值
 let [a,b,c,d] = "wugh";
@@ -201,7 +211,7 @@ console.log(a,b,c,d); // w u g h
 let {'0': e,length} = 'wgh';
 console.log(a,length) // w 3
 ```
-## 函数解析赋值
+### 函数解析赋值
 - 函数的形参列表也可以解构赋值
 ```ts
 function foo([x,y]){
@@ -225,7 +235,7 @@ console.log(foo({
 
 ## 箭头函数
 
-- 箭头函数定义
+### 箭头函数定义
 ```ts
 let f = (x, y) => {
   return x + y;
@@ -243,7 +253,7 @@ let f2 = x =>  x / 3;
 console.log(f(9));
 ```
 
-- 箭头函数使用细节
+### 箭头函数使用细节
 
 ```ts
 // 函数返回对象
@@ -255,29 +265,111 @@ let f = () => {
 let f1 = () => ({ name: "wc" })
 console.log(f());
 ```
-- 箭头函数与函数的区别
-  1. 写法不同，箭头函数使用箭头定义，写法简洁。 普通函数使用function定义。
-  2. 箭头函数都是匿名函数，而普通函数既可以是匿名函数，也可以是具名函数。
-  3. 箭头函数不能作为构造函数来使用，普通函数可以用作构造函数，以此来创建一个对象的实例。
-  4. this指向不同，箭头函数没有this，在声明的时候，捕获上下文的this供自己使用，一旦确定不会再变化。在普通函数中，this指向调用自己的对象，如果用在构造函数，this指向创建的对象实例。普通函数可以使用call，apply，bind改变this的指向。
-  5. 箭头函数没有arguments（实参列表，类数组对象），每一个普通函数在调用后都有一个arguments对象，用来存储实际传递的参数。
-  6. 箭头函数没有原型，而普通函数有。
+
+### 箭头函数与函数的区别
+- 写法不同，箭头函数使用箭头定义，写法简洁。 普通函数使用function定义。
+- 箭头函数都是匿名函数，而普通函数既可以是匿名函数，也可以是具名函数。
+- 箭头函数不能作为构造函数来使用，普通函数可以用作构造函数，以此来创建一个对象的实例。
+- this指向不同，箭头函数没有this，在声明的时候，捕获上下文的this供自己使用，一旦确定不会再变化。在普通函数中，this指向调用自己的对象，如果用在构造函数，this指向创建的对象实例。普通函数可以使用call，apply，bind改变this的指向。
+- 箭头函数没有arguments（实参列表，类数组对象），每一个普通函数在调用后都有一个arguments对象，用来存储实际传递的参数。
+- 箭头函数没有原型，而普通函数有。
+
+### 箭头函数不合适的场景
+
+- 不能作为类（构造器）,不能new
+- 没有prototype显示原型
+- 如果给原型对象上添加方法,方法最好不要写成箭头函数
+```ts
+function Cat(name) {
+  this.name = name;
+}
+
+function Dog(name) {
+  this.name = name;
+}
+
+Cat.prototype.sayHello = function(){
+  console.log(this.name);
+}
+
+Dog.prototype.sayHello = () => {
+  console.log(this.name);
+}
+
+let cat = new Cat("小咪");
+let dog = new Dog("旺财");
+
+cat.sayHello();// 小咪
+dog.sayHello();// und
+```
+
+::: tip 思考
+```ts
+var name = "二哈"
+let p = {
+    name: "旺财",
+    getName: function () {
+        console.log(this.name);
+        return () => {
+            console.log(this.name);
+        }
+    }
+}
+p.getName()(); // 旺财 旺财
+```
+:::
 
 ## 对象扩展
-- 属性和方法的简写
+
+### 属性和方法的简写
 ```ts
 let uName = "wc";
 let uAge = 18;
-// 后面写东西，基本上都是简写
 let person = {
 	uName,
-	uAge
+	uAge,
+	sayHello() {
+		console.log("sayHello...");
+	}
 }
 console.log(person.uName);
 console.log(person.uAge);
+person.sayHello();
 ```
 
-- 封装一个可以实现深copy的方法
+### Object.assign
+
+- 同名属性，后面的覆盖前面的。
+```ts
+const dog1 = { name:"旺财", age: 2 };
+const dog2 = Object.assign(dog1, { name: '二哈' });
+console.log(dog2); // { name:"二哈", age: 2 }
+```
+
+- 使用api给对象添加属性
+```ts
+const dog1 = { age: 2 };
+Object.defineProperty(dog1, 'name', {
+  value: '二哈',
+  enumerable: false, // 是否可枚举
+  configurable: false // 是否可(配置)删除
+})
+```
+
+- Object.assign 只能copy可枚举的属性
+
+```ts
+const dog1 = { age: 2 };
+Object.defineProperty(dog1, 'name', {
+  value: '二哈',
+  enumerable: false, // 是否可枚举
+  configurable: false, // 是否可(配置)删除
+})
+Object.assign({},dog1); // { age: 2 }
+```
+
+
+### 封装一个可以实现深copy的方法
 ```ts
 function deepClone(source) {
 	let newObj = {};
@@ -294,13 +386,74 @@ let obj1 = { name: "wc", address: { city: "bj" } }
 let obj2 = deepClone(obj1);
 obj1.address.city = "sh";
 console.log(obj2.address.city); // bj
-``` 
+```
+
+## Symbol
 
 ## Proxy
+```ts
+let obj = {
+	name: "wc",
+	age: 18
+}
+let objProxy = new Proxy(obj, {
+	// 访问属性时，走get，获取值时的捕获器
+	get(target, key) {
+		console.log(`监听到了obj对象的${key}属性被访问了`);
+		return target[key]
+	},
+	// 设置值时的捕获器
+	set(target, key, newValue) {
+		console.log(`监听到了obj对象的${key}属性被设置了`);
+		target[key] = newValue;
+	},
+	// 监听delete的捕获器
+	deleteProperty(target, key) {
+		console.log(`监听到了obj对象的${key}属性被删除了`);
+	},
+	// 监听in的捕获器
+	has(target, key) {
+		console.log(`监听到了obj对象的${key}属性in操作`);
+		return key in target;
+	},
+	// 还有其它的捕获器
+});
+objProxy.name; // 监听到了obj对象的name属性被访问了
+```
+## Set
 
-## map set
+- Set创建及基本操作
+```ts
+ const set = new Set();
+ set.add(1);
+ set.size; // 1
+ set.has(1); // true
+ set.clear();
+ // delete entries values keys
+```
+- Set会自动去除重复元素
+```ts
+ const set = new Set();
+ set.add(1);
+ set.add(1);
+// Set(1) {1}
 
-## class
+// 数组去重
+let arr = [1, 1, 2, 2, 3, 3];
+console.log(Array.from(new Set(arr)));
+```
+
+## Map
+
+- Map基本操作
+```ts
+const map = new Map();
+map.set(name,'旺财');
+map.get('name');
+map.delete(name);
+map.clear()
+```
+
 
 <git-talk />
 
