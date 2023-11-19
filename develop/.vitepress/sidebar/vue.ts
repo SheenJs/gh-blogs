@@ -17,6 +17,7 @@ export default [
         items: [
           {
             text: '3.3',
+            link: '/blogs/vue/vue3_3',
           },
         ],
       },
