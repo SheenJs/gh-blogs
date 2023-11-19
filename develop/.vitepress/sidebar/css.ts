@@ -21,4 +21,12 @@ export default [
     text: '网格布局',
     link: '/blogs/css/网格布局',
   },
+  {
+    text: 'less',
+    link: '/blogs/css/less',
+  },
+  {
+    text: 'sass',
+    link: '/blogs/css/sass',
+  },
 ] as DefaultTheme.Sidebar;

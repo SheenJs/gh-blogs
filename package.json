@@ -9,8 +9,9 @@
     "@vueuse/core": "^10.4.1",
     "axios": "^1.5.1",
     "less": "^4.2.0",
-    "swiper": "^9.2.3",
     "mockjs": "^1.1.0",
+    "sass": "^1.69.5",
+    "swiper": "^9.2.3",
     "vitepress": "^1.0.0-rc.20",
     "vitepress-theme-demoblock": "^3.0.3"
   },
@@ -21,6 +22,7 @@
     "gitalk": "^1.8.0",
     "md5": "^2.3.0",
     "prettier": "^2.8.4",
+    "scss": "^0.2.4",
     "vite": "^4.4.9",
     "vue": "^3.3.4",
     "vue-ghui": "^1.0.4"
