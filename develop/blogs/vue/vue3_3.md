@@ -139,6 +139,43 @@ export default defineConfig({
 
 ## defineModel
 
+* 定义子组件
+```vue
+<script setup>
+  const modelValue = defineModel();
+</script>
+
+<template>
+  <input v-model="modelValue" />
+</template>
+```
+* 使用组件
+:::demo
+```vue
+
+<script setup lang='ts'>
+  import { ref } from 'vue';
+  import DefineModel from './components/DefineModel.vue';
+  const msg = ref('');
+</script>
+
+<template>
+  <div>{{msg}}</div>
+  <DefineModel v-model='msg'></DefineModel>
+</template>
+<style lang='less' scoped>
+  div {
+    border: 1px solid red;
+    padding: 10px 0;
+  }
+
+  input {
+    border: pink 1px solid;
+  }
+</style>
+```
+:::
+
 
 
 

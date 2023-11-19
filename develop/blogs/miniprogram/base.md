@@ -313,14 +313,14 @@ Component({
 
 - 默认插槽
 
-```wxml
+```html
 <!--组件index.wxml-->
 <view>
   <slot></slot>
 </view>
 ```
 
-```wxml
+```html
 <view class="container">
   <comA>
     你好
@@ -330,14 +330,14 @@ Component({
 
 - 具名插槽
 
-```wxml
+```html
 <!--组件index.wxml-->
 <view>
   <slot name="a"></slot>
 </view>
 ```
 
-```wxml
+```html
 <!--组件使用-->
 <view class="container">
   <comA>

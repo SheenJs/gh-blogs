@@ -3,7 +3,7 @@
 layout: home
 
 title: GH BLOGS
-titleTemplate: A blog site of Wu Guanghui
+titleTemplate: 明天你好
 
 hero:
   name: "GH BLOGS"
