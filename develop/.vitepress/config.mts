@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress';
 import themeConfig from './themeConfig';
+import vue from '@vitejs/plugin-vue';
+
 import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock';
 
 // https://vitepress.dev/reference/site-config
@@ -17,6 +19,11 @@ export default defineConfig({
   },
   vite: {
     plugins: [demoblockVitePlugin()],
+  },
+  vue: {
+    script: {
+      propsDestructure: true,
+    },
   },
   head: [['link', { rel: 'icon', href: './logo.webp' }]], //网页logo配置,浏览器tab页logo
   themeConfig, //主题配置
