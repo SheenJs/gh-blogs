@@ -54,24 +54,13 @@ export const webpage: Webpage[] = [
     webpages: [
       { text: '百度', icon: BAIDU, href: 'https://www.baidu.com' },
       { text: '哔哩哔哩', icon: BILI, href: 'https://search.bilibili.com/' },
+      { text: 'CSDN', icon: CSDN, href: 'https://so.csdn.net/so/search' },
       {
         text: '百度翻译',
         icon: FANYI,
         href: 'https://fanyi.baidu.com/translate#zh/en/',
       },
-      { text: 'CSDN', icon: CSDN, href: 'https://so.csdn.net/so/search' },
-      { text: 'swiper', icon: swiper, href: 'https://swiperjs.com/vue' },
       { text: 'iconfont', icon: Iconfont, href: 'https://www.iconfont.cn/' },
-      {
-        text: 'echarts',
-        icon: echarts,
-        href: 'https://echarts.apache.org/zh/index.html',
-      },
-      {
-        text: '百度地图开放平台',
-        icon: BAIDU,
-        href: 'https://lbsyun.baidu.com',
-      },
       {
         text: '爱激活',
         icon: DEFAULT,
@@ -153,6 +142,11 @@ export const webpage: Webpage[] = [
         href: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
       },
       {
+        text: 'vantWeapp',
+        icon: vant,
+        href: 'https://vant-contrib.gitee.io/vant-weapp',
+      },
+      {
         text: 'tdesign',
         icon: tdesign,
         href: 'https://tdesign.tencent.com/miniprogram/overview',
@@ -227,10 +221,21 @@ export const webpage: Webpage[] = [
   {
     title: '可视化',
     webpages: [
+      { text: 'swiper', icon: swiper, href: 'https://swiperjs.com/vue' },
+      {
+        text: 'echarts',
+        icon: echarts,
+        href: 'https://echarts.apache.org/zh/index.html',
+      },
       {
         text: 'echarts demo',
         icon: ECHART_DEMO,
         href: 'https://www.isqqw.com/',
+      },
+      {
+        text: '百度地图开放平台',
+        icon: BAIDU,
+        href: 'https://lbsyun.baidu.com',
       },
     ],
   },

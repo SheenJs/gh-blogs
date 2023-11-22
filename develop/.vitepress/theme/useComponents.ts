@@ -4,10 +4,12 @@ import DemoBlock from 'vitepress-theme-demoblock/dist/client/components/DemoBloc
 import Antd from 'ant-design-vue';
 // @ts-ignore
 import gitTalk from '../../components/gittalk.vue';
+import hui from 'vue-ghui';
 
 export function useComponents(app) {
   app.component('Demo', Demo);
   app.component('DemoBlock', DemoBlock);
   app.use(Antd);
+  app.use(hui);
   app.component('git-talk', gitTalk);
 }

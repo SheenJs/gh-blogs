@@ -1,10 +1,10 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue';
 import Theme from 'vitepress/theme';
-// @ts-ignore
 import { useComponents } from './useComponents';
 import './style.less';
 import 'ant-design-vue/dist/reset.css';
+import 'vue-ghui/dist/style.css';
 
 export default {
   extends: Theme,

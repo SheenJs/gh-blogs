@@ -94,11 +94,16 @@ export default defineConfig({
 
 ```vue
 <script setup lang="ts">
-  //💥自定义属性机构赋值
+  import { watchEffect } from 'vue';
+
   const { name, age } = defineProps<{
-    name: string;
+    name: number;
     age: number;
   }>();
+
+  watchEffect(() => {
+    console.log(name, age);
+  });
 </script>
 
 <template>
@@ -138,6 +143,19 @@ export default defineConfig({
 
 
 ## defineModel
+
+* config中开启defineModel
+```js
+export default defineConfig({
+  // ...
+  vue: {
+    script: {
+      defineModel: true,
+    },
+  },
+  // ...
+});
+```
 
 * 定义子组件
 ```vue
