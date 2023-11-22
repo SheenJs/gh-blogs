@@ -1,8 +1,7 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
   import { useClipboard } from '@vueuse/core';
-  import 'vue-ghui/dist/style.css';
-  import { HButton, HIcon, toast } from 'vue-ghui';
+  import { toast } from 'vue-ghui';
   import { iconList } from './data';
 
   const source = ref('');
@@ -16,6 +15,7 @@
 
 <template>
   <div>
+    <a-button></a-button>
     <h-button
       v-for="iconName in iconList"
       :key="iconName"
