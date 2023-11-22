@@ -1,8 +1,6 @@
-// Don't remove this file, because it registers the demo components.
 import Demo from 'vitepress-theme-demoblock/dist/client/components/Demo.vue';
 import DemoBlock from 'vitepress-theme-demoblock/dist/client/components/DemoBlock.vue';
 import Antd from 'ant-design-vue';
-// @ts-ignore
 import gitTalk from '../../components/gittalk.vue';
 import hui from 'vue-ghui';
 

@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,Q as l}from"./chunks/framework.8c899d34.js";const b=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ghui/搭建组件库流程.md","filePath":"ghui/搭建组件库流程.md"}'),p={name:"ghui/搭建组件库流程.md"},o=l("",8),e=[o];function t(c,r,E,y,i,u){return a(),n("div",null,e)}const m=s(p,[["render",t]]);export{b as __pageData,m as default};
