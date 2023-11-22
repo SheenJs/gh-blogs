@@ -18,6 +18,16 @@ export default defineConfig({
   },
   vite: {
     plugins: [demoblockVitePlugin()],
+    server: {
+      proxy: {
+        '/api': {
+          //把以/api开头的api拼接target属性
+          target: 'http://localhost:9999/api',
+          changeOrigin: true, //开启同源策略
+          rewrite: (path) => path.replace(new RegExp(`^/api`), ''),
+        },
+      },
+    },
   },
   vue: {
     script: {

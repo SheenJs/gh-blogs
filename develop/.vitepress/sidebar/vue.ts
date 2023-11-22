@@ -49,13 +49,40 @@ export default [
     ],
   },
   {
+    text: '百度地图',
+    collapsed: false,
+    items: [
+      {
+        text: '地图初始化',
+        link: '/blogs/vue/bMap/1.百度地图初始化',
+      },
+      {
+        text: '地图初始化',
+        link: '/blogs/vue/bMap/2.百度地图类型切换',
+      },
+      {
+        text: '控件',
+        link: '/blogs/vue/bMap/3.控件',
+      },
+      {
+        text: '拾取经纬度',
+        link: '/blogs/vue/bMap/4.拾取经纬度',
+      },
+      {
+        text: '添加清除覆盖物',
+        link: '/blogs/vue/bMap/5.添加清除覆盖物',
+      },
+      {
+        text: '区域模式',
+        link: '/blogs/vue/bMap/6.区域模式',
+      },
+    ],
+  },
+  {
     items: [
       {
         text: 'vue辅助库',
         items: [
-          {
-            text: 'baidu map',
-          },
           {
             text: 'echarts',
             link: '/blogs/vue/echarts/base',

@@ -176,6 +176,30 @@ export default defineConfig({
 ```
 :::
 
+## express test
+:::demo
+```vue
+<template>
+  <div class='test'></div>
+</template>
+<script lang='ts' setup>
+  import axios from 'axios';
+  axios({
+    url:'/api/tutorials',
+    method:'post',
+    data:{
+      title:'15451',
+      description: '6666'
+    }
+  }).then(res => {
+    console.log(res)
+  })
+</script>
+<style lang='scss' scoped>
+</style>
+```
+:::
+
 
 
 
