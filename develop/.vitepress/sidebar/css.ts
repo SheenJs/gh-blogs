@@ -14,7 +14,7 @@ export default [
     link: '/blogs/css/加载动画',
   },
   {
-    text: '弹性盒模型',
+    text: '弹性布局',
     link: '/blogs/css/弹性盒模型',
   },
   {

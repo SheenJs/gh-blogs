@@ -11,7 +11,7 @@ export default [
       { text: 'css', link: '/blogs/css/常用片段', activeMatch: '/css/' },
       { text: 'JavaScript', link: '/blogs/js/JS基础', activeMatch: '/js/' },
       { text: 'vue', link: '/blogs/vue/vue3', activeMatch: '/vue/' },
-      { text: 'vite', link: '/a' },
+      { text: 'vite', link: '/blogs/vite/vite' },
       { text: 'mini program', link: '/blogs/miniprogram/base', activeMatch: '/miniprogram/' },
       { text: 'algorithm', link: '/a' },
       { text: 'uniApp', link: '/a' },

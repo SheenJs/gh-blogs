@@ -9,37 +9,59 @@
 </script>
 
 <template>
-  <div class="item" :style="{ height: `${mock.Random.integer(80, 150)}px`, alignSelf }">
-    <div>order:<input title="order" v-model="order" placeholder="order" /></div>
-    <div>
-      flexGrow:
-      <input title="flex-grow" v-model="flexGrow" placeholder="flexGrow" />
+  <div
+    class="css-flex-item-item"
+    :style="{ height: `${mock.Random.integer(120, 300)}px`, alignSelf }"
+  >
+    <div class="prop-item">
+      <div>order</div>
+      <a-input title="order" v-model:value="order" placeholder="order" style="width: 100px" />
     </div>
-    <div>
-      flexShrink:
-      <input title="flex-grow" v-model="flexShrink" placeholder="flexShrink" />
+    <div class="prop-item">
+      <div>flexGrow</div>
+      <a-input
+        title="flex-grow"
+        v-model:value="flexGrow"
+        placeholder="flexGrow"
+        style="width: 100px"
+      />
     </div>
-    <a-select v-model:value="alignSelf" style="width: 100px">
-      <a-select-option v-for="item in align_self" :value="item">
-        {{ item }}
-      </a-select-option>
-    </a-select>
-    <slot></slot>
+    <div class="prop-item">
+      <div>flexShrink</div>
+      <a-input
+        title="flex-grow"
+        v-model:value="flexShrink"
+        placeholder="flexShrink"
+        style="width: 100px"
+      />
+    </div>
+    <div class="prop-item">
+      <div>alignSelf</div>
+      <a-select v-model:value="alignSelf" style="width: 100px">
+        <a-select-option v-for="item in align_self" :value="item">
+          {{ item }}
+        </a-select-option>
+      </a-select>
+    </div>
+    <div class="prop-item">
+      <div>下标</div>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
 <style scoped lang="less">
-  .item {
-    width: 150px;
+  .css-flex-item-item {
+    width: 180px;
     background: pink;
     text-align: center;
-    margin-left: 10px;
     order: v-bind(order);
     flex-grow: v-bind(flexGrow);
     flex-shrink: v-bind(flexShrink);
-    > div {
+    > .prop-item {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       input {
         width: 50px;
       }
