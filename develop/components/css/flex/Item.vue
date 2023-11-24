@@ -19,11 +19,11 @@
       flexShrink:
       <input title="flex-grow" v-model="flexShrink" placeholder="flexShrink" />
     </div>
-    <Select v-model:value="alignSelf" style="width: 100px">
-      <SelectOption v-for="item in align_self" :value="item">
+    <a-select v-model:value="alignSelf" style="width: 100px">
+      <a-select-option v-for="item in align_self" :value="item">
         {{ item }}
-      </SelectOption>
-    </Select>
+      </a-select-option>
+    </a-select>
     <slot></slot>
   </div>
 </template>

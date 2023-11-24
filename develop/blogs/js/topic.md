@@ -228,6 +228,9 @@ getUsers('吴光辉');
     height: 500px;
     position: relative;
     overflow-y: scroll;
+    &::-webkit-scrollbar{
+      display: none
+    }
 
     .car {
       width: 50px;
