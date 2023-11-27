@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "vitepress dev develop",
-    "build": "vitepress build develop",
-    "preview": "vitepress preview develop"
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.0",
