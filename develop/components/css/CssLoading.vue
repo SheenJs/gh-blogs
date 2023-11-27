@@ -23,8 +23,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
       .explain {
-        display: none;
+        //display: none;
+        position: absolute;
+        bottom: 0;
       }
     }
   }
