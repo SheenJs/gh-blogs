@@ -1,0 +1,1 @@
+import{_ as c,o as t,c as a,p as _,q as d,k as o}from"./framework.sj-2qheI.js";const n={},e=s=>(_("data-v-9115f4bf"),s=s(),d(),s),p={class:"com__box"},i=e(()=>o("div",{class:"loading"},null,-1)),r=e(()=>o("h4",{class:"explain"},"L94.vue",-1)),l=[i,r];function f(s,h){return t(),a("div",p,l)}const m=c(n,[["render",f],["__scopeId","data-v-9115f4bf"]]);export{m as default};
