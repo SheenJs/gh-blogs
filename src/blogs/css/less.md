@@ -23,7 +23,7 @@
     color: darken(@theme, 10%);
   }
   .@{select} {
-    height: 300px;
+    height: 100px;
   }
 </style>
 ```
@@ -62,113 +62,130 @@
 - multiple: 多次包含文件
 - optional: 找不到文件时继续编译
   每个 @import 允许多个关键字，你必须使用逗号分隔关键字：
+
 ```less
  @import (optional, reference) "foo.less";
 ```
 
 ## 继承
-```less
-.pre {
-	color: red;
-}
 
-.test:extend(.pre) {}
-
-// .pre,
-// .test {
-// 	color: red;
-// }
+:::demo
+```vue
+<template>
+  <div class='less-extend'>
+    我系渣渣辉
+  </div>
+</template>
+<style lang='less' scoped>
+  .pre {
+    color: red;
+  }
+  
+  .less-extend:extend(.pre) {}
+</style>
 ```
-
-## 合并属性
-```less
-// 属性合并
-.mixin() {
-	box-shadow+: inset 0 0 10px #555;
-}
-
-.myclass {
-	.mixin();
-	box-shadow+: 0 0 20px black;
-}
-
-// .myclass {
-//   box-shadow: inset 0 0 10px #555, 0 0 20px black;
-// }
-
-.mixin() {
-	transform+_: scale(2);
-}
-
-.myclass {
-	.mixin();
-	transform+_: rotate(15deg);
-}
-
-// .myclass {
-//   transform: scale(2) rotate(15deg);
-// }
-```
+:::
 
 ## 混入
-```less
-.a {
-	color: red;
-}
 
-#b {
-	background: blanchedalmond;
-}
+:::demo
+```vue
+<template>
+  <div class='less-mixin'>
+    <div class="test">我系渣渣辉</div>
+    <div class="test2">我系渣渣辉</div>
+    <div class="test3">我系渣渣辉</div>
+    <div class="test4">我系渣渣辉</div>
+  </div>
+</template>
+<style lang='less' scoped>
+  .a {
+    color: red;
+  }
 
-.c {
-	&:active {
-		border: 1px solid black
-	}
-}
+  #b {
+    background: blanchedalmond;
+  }
 
-.prop(@color: pink, @bg: blue) {
-	color: @color;
-	background: @bg;
-}
+  .c {
+    &:active {
+      border: 1px solid black
+    }
+  }
 
-// .border(@bc: red, @bw: 1px, @bt: solid, ) {
-// 	border: @bc @bw @bt;
-// }
+  .test {
+    // 加不加()镀锌
+    .a;
+    #b();
+    .c();
+  }
+  
+  //-----------
 
-.test {
-	// 加不加()镀锌
-	.a;
-	#b();
-	.c();
-}
+  .prop(@color: pink, @bg: blue) {
+    color: @color;
+    background: @bg;
+  }
 
-.test2 {
-	.prop();
-}
+  .test2 {
+    .prop();
+  }
 
-.test3 {
-	.prop(@bg: #331400) !important;
-	.border(pink)
-}
+  .test3 {
+    .prop(@bg: #331400) !important;
+    //.border(pink)
+  }
+  //----------
 
-.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #000) {
-  -webkit-box-shadow: @arguments;
-  -moz-box-shadow: @arguments;
-  box-shadow: @arguments;
-}
-.big-block {
-  .box-shadow(2px, 5px);
-}
-
-//.big-block {
-//  -webkit-box-shadow: 2px 5px 1px #000;
-//  -moz-box-shadow: 2px 5px 1px #000;
-//  box-shadow: 2px 5px 1px #000;
-//}
+  .box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #000) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+  }
+  .test4 {
+    .box-shadow(2px, 5px);
+  }
+  
+  //.test4 {
+  //  -webkit-box-shadow: 2px 5px 1px #000;
+  //  -moz-box-shadow: 2px 5px 1px #000;
+  //  box-shadow: 2px 5px 1px #000;
+  //}
+</style>
 ```
+:::
+
+## 属性合并
+
+:::demo
+```vue
+<template>
+  <div class='less-merge'>
+    我系渣渣辉
+  </div>
+</template>
+<style lang='less' scoped>
+  // 属性合并
+  .mixin() {
+    box-shadow+: inset 0 0 10px #555;
+    transform+_: scale(2);
+  }
+
+  .less-merge {
+    .mixin();
+    box-shadow+: 0 0 20px black;
+    transform+_: translateX(50px);
+  }
+
+  // .less-merge {
+  //   box-shadow: inset 0 0 10px #555, 0 0 20px black;
+  //   transform: rotate(15deg) scale(2);
+  // }
+</style>
+```
+:::
 
 ## 分离规则集
-
 
 ## 映射
 
