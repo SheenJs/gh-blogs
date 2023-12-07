@@ -14,8 +14,8 @@
     },
     mounted() {
       const commentConfig = {
-        clientID: 'acd2fa09352e6a2f5321',
-        clientSecret: '80367cab283ee5e7eb29ced87ad1f6a8b933588d',
+        clientID: 'e190beeabc9315d3328f',
+        clientSecret: 'e4b8a3c855443d84b422e6dd8dce557e4fe20d74',
         repo: 'gh-blogs',
         owner: 'SheenJs',
         admin: ['SheenJs'],
