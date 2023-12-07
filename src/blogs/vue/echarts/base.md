@@ -16,24 +16,7 @@
   const theme = ref('dark');
 
   onMounted(() => {
-    chart = useECharts(helloChartRef.value,{
-      title: {
-        text: '自定义主题 JS版',
-      },
-      xAxis: {
-        // x轴
-        data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子'],
-      },
-      yAxis: {
-        // y轴
-      },
-      series: {
-        // 图表类型
-        name: '销量',
-        type: 'bar',
-        data: [5, 20, 36, 10, 10, 20],
-      },
-    })
+    chart = useECharts(helloChartRef.value,)
   });
 </script>
 

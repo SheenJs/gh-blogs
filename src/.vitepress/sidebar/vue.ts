@@ -101,6 +101,12 @@ export default [
       },
       {
         text: 'transition',
+        items: [
+          { text: 'transition基础', link: '/blogs/vue/transition' },
+          {
+            text: 'transition过渡收集',
+          },
+        ],
       },
     ],
   },
