@@ -312,3 +312,53 @@ getUserProp(user, 'name');
 const key: string = '';
 console.log(user[key as keyof User]);
 ```
+
+## 拖动
+
+:::demo
+
+```vue
+
+<template>
+  <div ref="contentRef" class='js-mouse-content'>
+    <div ref="jsMouseTargetRef" class="js-mouse-target"></div>
+  </div>
+</template>
+<script lang='ts' setup>
+  import {onMounted, ref, unref} from "vue";
+
+  const jsMouseTargetRef = ref<HTMLElement>();
+  const contentRef = ref<HTMLElement>();
+  const star = ref([0, 0]);
+
+  onMounted(() => {
+    jsMouseTargetRef.value.addEventListener('mousedown', (downEv: MouseEvent) => {
+      star.value = [downEv.clientX - downEv.target.offsetLeft, downEv.clientY - downEv.target.offsetTop];
+      document.addEventListener('mousemove', (downMove: MouseEvent) => {
+        const left = downMove.clientX - unref(star)[0];
+        const top = downMove.clientY - unref(star)[1];
+        downMove.target.style.left = left + 'px';
+        downMove.target.style.top = top + 'px';
+      })
+    })
+    
+    document.addEventListener('mouseup', () => {
+      jsMouseTargetRef.value.onmousemove = null;
+    })
+  })
+</script>
+<style lang='less' scoped>
+  .js-mouse-content {
+    height: 500px;
+    position: relative;
+
+    .js-mouse-target {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: red;
+    }
+  }
+</style>
+```
+:::
