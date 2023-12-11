@@ -1,1 +1,0 @@
-import{_ as s,o as i,c as a,R as n}from"./chunks/framework.XneDgaHT.js";const u=JSON.parse('{"title":"快速上手","description":"","frontmatter":{},"headers":[],"relativePath":"ghui/快速上手.md","filePath":"ghui/快速上手.md"}'),l={name:"ghui/快速上手.md"},p=n("",10),t=[p];function e(h,k,r,d,E,g){return i(),a("div",null,t)}const o=s(l,[["render",e]]);export{u as __pageData,o as default};

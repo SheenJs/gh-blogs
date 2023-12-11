@@ -1,7 +1,7 @@
 import type { DefaultTheme } from 'vitepress';
 
 import nav from './nav';
-import sidebar from './sidebar/index';
+import sidebar from './sidebar';
 import socialLinks from './socialLinks';
 
 // https://vitepress.dev/reference/default-theme-config

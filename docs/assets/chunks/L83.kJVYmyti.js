@@ -1,1 +1,0 @@
-import{_ as c,o as t,c as a,p as _,q as d,k as o}from"./framework.XneDgaHT.js";const n={},e=s=>(_("data-v-f5255f79"),s=s(),d(),s),p={class:"com__box"},i=e(()=>o("div",{class:"loading"},null,-1)),r=e(()=>o("h4",{class:"explain"},"L83.vue",-1)),l=[i,r];function f(s,h){return t(),a("div",p,l)}const m=c(n,[["render",f],["__scopeId","data-v-f5255f79"]]);export{m as default};
