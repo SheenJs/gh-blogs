@@ -1,0 +1,1 @@
+import{_ as o,o as _,c as t,p as a,m as d,k as c}from"./framework.7096fd12.js";const n={},s=e=>(a("data-v-2cfe9ac9"),e=e(),d(),e),p={class:"com__box"},i=s(()=>c("div",{class:"loading"},null,-1)),l=s(()=>c("h4",{class:"explain"},"L63.vue",-1)),r=[i,l];function f(e,h){return _(),t("div",p,r)}const v=o(n,[["render",f],["__scopeId","data-v-2cfe9ac9"]]);export{v as default};

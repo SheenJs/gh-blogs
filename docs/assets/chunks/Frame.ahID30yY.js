@@ -1,1 +1,0 @@
-import{d as s,o as r,c as o,_ as c}from"./framework.XneDgaHT.js";const a=["src"],t=s({__name:"Frame",props:{src:{}},setup(_){return(e,n)=>(r(),o("iframe",{src:e.src},null,8,a))}}),m=c(t,[["__scopeId","data-v-f449d8e5"]]);export{m as T};

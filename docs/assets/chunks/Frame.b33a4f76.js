@@ -1,0 +1,1 @@
+import{d as _,o as s,c,_ as o}from"./framework.7096fd12.js";const r=["src"],t=_({__name:"Frame",props:{src:{}},setup(a){return(e,n)=>(s(),c("iframe",{src:e.src},null,8,r))}});const m=o(t,[["__scopeId","data-v-0f9dc367"]]);export{m as T};

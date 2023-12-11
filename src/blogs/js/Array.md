@@ -187,33 +187,561 @@ test.filter(item => item); // 不会去除只含空格的字符串,空数组、�
 ## 能改变原数组的方法可视化
 
 - push 尾部追加元素
-<SArray method='push' />
-- pop 尾部删除元素
-<SArray method='pop' />
-- unshift 头部添加元素
-<SArray method='unshift' />
-- shift 头部删除元素
-<SArray method='shift' />
-- reverse 翻转数组
-<SArray method='reverse' />
-- sort 数组的元素进行排序
-  - 升序
-  <SArray method='sort' :value='(a,b) => a.value - b.value' />
-  - sort 降序
-  <SArray method='sort' :value='(a,b) => b.value - a.value' />
-- splice 移除或者替换已存在的元素
-  - 数组从2号位每次移除一个元素
-  <SArray method='splice' :value='[1,1]' />
-  - 从数组2号位每次新增一个元素
-  <SArray method='splice' :value="[1,0,{value: 10,color: mock.mock('@color')}]" />
-## 常用方法
 
+:::demo
+```vue
+<template>
+    <AButton @click="fn">执行</AButton>
+    <div class="item" v-for="{ color, value } in list" :style="{ background: `${color}` }">
+      {{ value }}
+    </div>
+</template>
+<script setup lang="ts">
+  import { ref } from 'vue';
+  import mock from 'mockjs';
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+  
+  const fn = () => {
+    list.value.push({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    })
+  }
+</script>
+
+<style lang="less" scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+- pop 尾部删除元素
+
+:::demo
+```vue
+<template>
+    <AButton @click="fn">执行</AButton>
+    <div class="item" v-for="{ color, value } in list" :style="{ background: `${color}` }">
+      {{ value }}
+    </div>
+</template>
+<script setup lang="ts">
+  import { ref } from 'vue';
+  import mock from 'mockjs';
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+  
+  const fn = () => {
+    list.value.pop()
+  }
+</script>
+
+<style lang="less" scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+- unshift 头部添加元素
+
+:::demo
+```vue
+<template>
+    <AButton @click="fn">执行</AButton>
+    <div class="item" v-for="{ color, value } in list" :style="{ background: `${color}` }">
+      {{ value }}
+    </div>
+</template>
+<script setup lang="ts">
+  import { ref } from 'vue';
+  import mock from 'mockjs';
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+  
+  const fn = () => {
+    list.value.unshift({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    })
+  }
+</script>
+
+<style lang="less" scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+- shift 头部删除元素
+
+:::demo
+```vue
+<template>
+    <AButton @click="fn">执行</AButton>
+    <div class="item" v-for="{ color, value } in list" :style="{ background: `${color}` }">
+      {{ value }}
+    </div>
+</template>
+<script setup lang="ts">
+  import { ref } from 'vue';
+  import mock from 'mockjs';
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+  
+  const fn = () => {
+    list.value.shift()
+  }
+</script>
+
+<style lang="less" scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+- reverse 翻转数组
+
+:::demo
+```vue
+<template>
+    <AButton @click="fn">执行</AButton>
+    <div class="item" v-for="{ color, value } in list" :style="{ background: `${color}` }">
+      {{ value }}
+    </div>
+</template>
+<script setup lang="ts">
+  import { ref } from 'vue';
+  import mock from 'mockjs';
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+  
+  const fn = () => {
+    list.value.reverse()
+  }
+</script>
+
+<style lang="less" scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+- sort 数组的元素进行排序
+
+:::demo
+```vue
+<template>
+  <AButton @click="fn">{{flag ? '降序' : '升序'}}</AButton>
+  <div class="item" v-for="{ color, value } in list" :style="{ background: `${color}` }">
+    {{ value }}
+  </div>
+</template>
+<script setup lang="ts">
+  import { ref, unref } from 'vue';
+  import mock from 'mockjs';
+
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+
+  const flag = ref(true);
+
+  const fn = () => {
+    list.value.sort((a, b) => unref(flag) ? a.value - b.value : b.value - a.value);
+    flag.value = !flag.value;
+  }
+</script>
+
+<style lang="less" scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+- splice 移除或替换已存在的指定下标元素
+
+:::demo
+
+```vue
+
+<template>
+  <div>
+    <AButton @click='fn2'>替换1号下标元素</AButton>
+    <AButton @click='fn'>移除1号下标元素</AButton>
+  </div>
+  <div class='item' v-for='{ color, value } in list' :style='{ background: `${color}` }'>
+    {{ value }}
+  </div>
+</template>
+<script setup lang='ts'>
+  import { ref } from 'vue';
+  import mock from 'mockjs';
+
+  const props = defineProps<{
+    method: string;
+    value?: any;
+  }>();
+
+  const list = ref(
+    Array.from({ length: 5 }, () => ({
+      color: mock.mock('@color'),
+      value: mock.Random.integer(0, 50),
+    }))
+  );
+
+  const flag = ref(false);
+
+  const fn = () => {
+      list.value.splice(1, 1);
+  }
+
+  const fn2 = () => {
+    list.value.splice(1, 1, { value: mock.Random.integer(0, 50), color: mock.mock('@color') });
+  }
+</script>
+
+<style lang='less' scoped>
+  .opt {
+    margin-bottom: 10px;
+  }
+
+  .item {
+    border: 1px solid #666;
+    width: 60px;
+    display: inline-block;
+    line-height: 60px;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+```
+:::
+
+## 常用方法
 
 ## 部分常用方法底层实现
 
-<script setup lang="ts">
-    import mock from 'mockjs';
-    import SArray from '/components/js/array/Array.vue';
-</script>
+### forEach(遍历)
+```js
+Array.prototype.each = function(fn){
+	for(let i = 0; i < this.length; i++){
+		fn(this[i],i,this);
+	}
+}
+```
+
+### push(尾部添加一个或多个，返回数组长度)
+```js
+Array.prototype.push = function(){
+    for(item in arguments){
+        this[this.length] = item;
+    }
+    return this.length;
+}
+```
+
+### pop(尾部删除一个元素，返回删除元素)
+```js
+Array.prototype.pop = function(){
+  if(this.length == 0){
+    return;
+  }
+  let value = this[this.length - 1];
+  this.length -= 1;
+  return value;
+}
+```
+
+### unshift(头部添加)
+```js
+Array.prototype.unshift = function(){
+	let result = [];
+	for(let index in arguments){
+		result[index] = arguments[index];
+	}
+	for(let item of this){
+		result[result.length] = item;
+	}
+	this.length = 0;
+	for(let index in result){
+		this[index] = result[index];
+	}
+	return this.length;
+}
+```
+
+### shift(头部删除)
+```js
+Array.prototype.shift = function(){
+	let temp = [];
+	for(let index in this){
+		temp[index] = this[index];
+	}
+	this.length = 0;
+	console.log(temp[0],'temp')
+	for(let i = 0; i < temp.length - 1; i++){
+		this[i] = temp[i + 1];
+	}
+	return temp[0];
+}
+```
+
+### every(判断数组元素是否都满足指定的函数)
+```js
+Array.prototype.every = function(fn){
+	for(let i = 0;i < this.length; i++){
+		if(!fn(this[i],i,this)) return false;
+	}
+	return true;
+}
+```
+
+### some(判断数组是否有元素满足指定的元素)
+```js
+Array.prototype.some = function(fn){
+	for(let i = 0;i < this.length;i++){
+		if(fn(this[i],i,this)) return true;
+	} 
+	return false;
+}
+```
+
+### filter(过滤)
+```js
+Array.prototype.filter = function(fn){
+	let reuslt = [];
+	for(let i = 0;i < this.length;i++){
+		if(fn(this[i])) reuslt.push(this[i]);
+	}
+	return reuslt;
+}
+```
+
+### isArray(判断某对象是否是数组)
+```js
+Array.prototype.isArray = function(){
+	return Object.prototype.toString.call(value) === '[object Array]';
+}
+```
+
+### concat(数组拼接)
+```js
+Array.prototype.concat = function(){
+	let reuslt = this;
+	if(arguments.length != 0){
+		for(let item of arguments){
+			if(Object.prototype.toString.call(item) === '[object Array]'){
+				for(let items of item){
+					reuslt[reuslt.length] = items;
+				}
+			}else{
+				reuslt[reuslt.length] = item;
+			}
+		}
+	}
+	console.log(reuslt)
+	return reuslt;
+}
+```
+
+### copyWithin(把数组的一部分元素拷贝到另一部分位置上)
+```js
+Array.prototype.copyWithin = function(targt,star = 0,end = this.length){
+	for(let i = targt;i <= (end - star);i++){
+		this[i] = this[star];
+		star++;
+	}
+	return this;
+}
+```
+
+### fill (固定值填充数组)
+```js
+Array.prototype.fill = function(value,star = 0,end = this.length){
+	for(let i = star;i < (end - star); i++){
+		this[i] = value;
+	}
+	return this;
+}
+```
+
+### find(返回数组中满足提供的测试函数的第一个元素的值。否则返回undefined )
+```js
+Array.prototype.find = function(fn){
+  for(let i = 0; i < this.length;i++){
+    if(fn(this[i],i,this)) return this[i];
+  }
+  return;
+}
+```
+
+### findIndex(返回满足第一个指定函数元素的下标)
+```js
+Array.prototype.find = function(fn){
+	for(let i = 0; i < this.length;i++){
+		if(fn(this[i],i,this)) return i;
+	}
+	return -1;
+}
+```
+
+### includes(数组是否包含一个指定值)
+```js
+Array.prototype.includes = function(value, fromIndex = 0){
+	for(let i = fromIndex; i < this.length; i++){
+		if(this[i] === value){
+			return true;
+		}
+	}
+	return false;
+}
+```
+
+### join
+```js
+Array.prototype.join = function(separator){
+	if(!this.length){
+		return ''
+	}else if(this.length === 1){
+		console.log(1)
+		return this[0].toString();
+	}else{
+		let str = '';
+		for (var i = 0; i < this.length; i++) {
+			str += this[i] + `${i < this.length - 1 ? separator : ''}`;
+		}
+		return str;
+	};
+}
+```
 
 <git-talk />

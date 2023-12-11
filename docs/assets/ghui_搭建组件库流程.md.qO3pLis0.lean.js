@@ -1,1 +1,0 @@
-import{_ as s,o as i,c as a,R as n}from"./chunks/framework.XneDgaHT.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ghui/搭建组件库流程.md","filePath":"ghui/搭建组件库流程.md"}'),l={name:"ghui/搭建组件库流程.md"},p=n("",8),h=[p];function t(e,k,r,E,d,g){return i(),a("div",null,h)}const F=s(l,[["render",t]]);export{u as __pageData,F as default};
