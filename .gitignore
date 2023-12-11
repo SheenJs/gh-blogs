@@ -8,11 +8,13 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # .vitepress
-/develop/.vitepress/cache
+/src/.vitepress/cache
+/back
 
 *-lock.yaml
 *.rar
 
+docs_back
 node_modules
 dist-ssr
 *.local
@@ -27,3 +29,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/back/
