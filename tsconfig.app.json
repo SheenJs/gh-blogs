@@ -6,6 +6,6 @@
     "module": "ESNext",
     "types": ["vite/client"]
   },
-  "include": ["index.d.ts", "src/**/*"],
+  //  "include": ["/**/*.d.ts", "/**/*"],
   "exclude": ["node_modules"]
 }

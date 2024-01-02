@@ -4,7 +4,7 @@ export default [
   { text: '首页', link: '/' },
   {
     text: 'vitepress',
-    activeMatch: '/blogs/',
-    items: [{ text: '起步', link: '/blogs/vitepress/1.起步', activeMatch: '/vitepress/' }],
+    link: '/blogs/vitepress/项目初始化',
+    activeMatch: '/blogs/vitepress/',
   },
 ] as DefaultTheme.NavItem[];

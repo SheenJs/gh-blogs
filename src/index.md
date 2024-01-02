@@ -2,40 +2,39 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: GH BLOGS
-titleTemplate: 逝者如斯夫,不舍昼夜。
+title: i'm ikun
+titleTemplate: 你才是小黑子
 
 hero:
-  name: "blogs"
-  text: 🍂🌻🌼🌷🌱🌲🌴
-  tagline: 🍂🌻🌼🌷🌱🌲🌴
+  name: "iKun"
+  text: 🧑‍🎤💃🗣️🏀
+  tagline: ‍🎤💃🗣️🏀
   actions:
     - theme: brand
-      text:  🍂🌻🌼
-      link: /ghui/搭建组件库流程
+      text: 💃
     - theme: alt
-      text: 🌱🌲🌴
+      text: 🏀
       link: /api-examples
   image:
     src: /logo.webp
 
 features:
-- icon: 🍂
+- icon: 🧑‍🎤
   title: 唱
   details: 你个小黑子
   link: 
 
-- icon: 🌻
+- icon: 💃
   title: 跳
   details: 我是真ikun
   link: 
 
-- icon: 🌼
+- icon: 🗣️
   title: rap
   details: 你干嘛,哎呦
   link: 
 
-- icon: 🌷
+- icon: 🏀
   title: 篮球
   details: 食不食油饼
   link: /
