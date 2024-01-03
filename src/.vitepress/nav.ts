@@ -5,6 +5,14 @@ export default [
   {
     text: 'vitepress',
     link: '/blogs/vitepress/项目初始化',
-    activeMatch: '/blogs/vitepress/',
+    activeMatch: '/vitepress/',
+  },
+  {
+    text: '博客',
+    items: [
+      { text: 'JavaScript', link: '/blogs/JavaScript/基础' },
+      { text: 'html', link: '/blogs/html/标签' },
+      { text: 'vue', link: '/blogs/vue/vue2' },
+    ],
   },
 ] as DefaultTheme.NavItem[];

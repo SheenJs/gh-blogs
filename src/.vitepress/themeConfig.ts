@@ -14,13 +14,17 @@ export default {
   nav, //头部导航
   sidebar, //侧边栏
   socialLinks, //项目仓库地址
-  outline: 'deep',
-  outlineTitle: '章节导航', // 文章导航提示
+  outline: {
+    level: 'deep',
+    label: '章节导航',
+  },
   docFooter: {
     prev: '←上一篇',
     next: '下一篇→',
   }, //自定义上一篇下一篇按钮文字
-  lastUpdatedText: '上次更新时间',
+  lastUpdated: {
+    text: '上次更新时间',
+  },
   //跳转到仓库编辑
   editLink: {
     text: '在github编辑该页面',
